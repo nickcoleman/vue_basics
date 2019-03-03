@@ -7,6 +7,10 @@ Vue.filter("snippet", val => {
   return val.slice(0, 50) + "..."
 })
 
+Vue.filter("search", val => {
+  return val
+})
+
 new Vue({
   el: "#app",
   render: h => h(App)
